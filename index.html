@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abinanthan T — Data Analyst</title>
+  <meta name="description"
+    content="Portfolio of Abinanthan T, a data analyst who starts with “Why?” and keeps going with “How?”" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@600;800&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <canvas id="dot-grid" aria-hidden="true"></canvas>
+
+  <!-- NAV -->
+  <header class="site-nav" role="banner">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="#" class="monogram" aria-label="Abinanthan T — home">AT</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-name">
+      <div class="container">
+        <div class="hero-text">
+          <h1 id="hero-name">
+            <span class="hero-line hero-line-1">Abinanthan T</span>
+            <span class="hero-line hero-line-2">Data analyst.</span>
+          </h1>
+          <p class="hero-tagline fade-in-up">I start with “Why?” and keep going with “How?”</p>
+          <p class="hero-sub fade-in-up">That curiosity drives the way I explore data, solve problems, and discover
+            insights.</p>
+
+          <div class="terminal fade-in-up" role="region" aria-label="SQL terminal demo">
+            <div class="terminal-bar" aria-hidden="true">
+              <span class="t-dot"></span><span class="t-dot"></span><span class="t-dot"></span>
+            </div>
+            <pre class="terminal-code"
+              aria-label="SQL query"><code id="sql-code"></code><span class="caret" aria-hidden="true"></span></pre>
+            <div class="terminal-result" id="terminal-result" aria-live="polite" aria-label="Query result" hidden>
+              <table>
+                <thead>
+                  <tr>
+                    <th>name</th>
+                    <th>role</th>
+                    <th>location</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Abinanthan T</td>
+                    <td>Data Analyst</td>
+                    <td>Flexible</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="hero-ctas fade-in-up">
+            <a href="#projects" class="btn btn-primary">View projects</a>
+            <a href="assets/Abinanthan Resume.pdf" download class="btn btn-secondary">Download resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-strip" aria-label="Skills marquee">
+      <div class="marquee-track" id="marquee-track">
+        <span>Python</span><span>SQL</span><span>DAX</span><span>Pandas</span><span>Excel</span><span>Power
+          BI</span><span>Looker Studio</span><span>MySQL</span><span>Data cleaning</span><span>Data
+          modeling</span><span>GenAI</span>
+        <span aria-hidden="true">Python</span><span aria-hidden="true">SQL</span><span
+          aria-hidden="true">DAX</span><span aria-hidden="true">Pandas</span><span aria-hidden="true">Excel</span><span
+          aria-hidden="true">Power BI</span><span aria-hidden="true">Looker Studio</span><span
+          aria-hidden="true">MySQL</span><span aria-hidden="true">Data cleaning</span><span aria-hidden="true">Data
+          modeling</span><span aria-hidden="true">GenAI</span>
+      </div>
+    </div>
+
+    <!-- STATS -->
+    <section class="stats-section" aria-label="Highlights">
+      <div class="container">
+        <div class="stats-row">
+          <div class="stat-item"><span class="stat-number" data-target="1" data-suffix=" yr">0</span><span
+              class="stat-label">across operations, business and development</span></div>
+          <div class="stat-item"><span class="stat-number" data-target="500" data-suffix="+">0</span><span
+              class="stat-label">student records verified at IISc</span></div>
+          <div class="stat-item"><span class="stat-number" data-target="700" data-suffix="+">0</span><span
+              class="stat-label">recruiters contacted</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects-section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 class="section-heading" id="projects-heading">
+          <span class="heading-text">Projects</span>
+          <span class="heading-line" aria-hidden="true"></span>
+        </h2>
+
+        <details class="project-card" open>
+          <summary class="project-summary">
+            <div class="project-summary-inner">
+              <div class="project-meta"><span class="project-metric">28M</span><span
+                  class="project-metric-label">population analyzed</span></div>
+              <h3 class="project-title">Njiwa Water Project</h3>
+              <span class="project-tags"><span class="tag">Power BI</span><span class="tag">Power Query</span><span
+                  class="tag">SQL</span><span class="tag">DAX</span><span class="tag">Data cleaning</span><span
+                  class="tag">Data modeling</span></span>
+            </div>
+            <span class="project-toggle" aria-hidden="true">+</span>
+          </summary>
+          <div class="project-body">
+            <div class="project-cols">
+              <div class="project-col">
+                <h4>The question</h4>
+                <p>How well are water projects reaching people across 5 provinces, and how does budget compare with
+                  actual cost?</p>
+              </div>
+              <div class="project-col">
+                <h4>What I did</h4>
+                <p>Tracked population access, project completion, budget vs actual cost and improvement costs. Used
+                  Power Query and DAX to build measures. Made interactive visuals by province, water source, location
+                  type and cost.</p>
+              </div>
+              <div class="project-col">
+                <h4>The result</h4>
+                <p>A Power BI dashboard with KPIs — 28M population, 13M with water access, <strong>47.83%</strong>
+                  access rate and project completion.</p>
+              </div>
+            </div>
+            <div class="project-screenshots">
+              <figure class="screenshot-fig">
+                <button class="screenshot-btn" aria-label="Enlarge Njiwa Water Project overview dashboard"
+                  data-src="assets/njiwa-1.jpg"><img src="assets/njiwa-1.jpg"
+                    alt="Njiwa Water Project Power BI overview dashboard" loading="lazy" /></button>
+                <figcaption>Overview dashboard</figcaption>
+              </figure>
+              <figure class="screenshot-fig">
+                <button class="screenshot-btn" aria-label="Enlarge Njiwa Water Project report dashboard"
+                  data-src="assets/njiwa-2.jpg"><img src="assets/njiwa-2.jpg" alt="Njiwa Water Project report dashboard"
+                    loading="lazy" /></button>
+                <figcaption>Report dashboard</figcaption>
+              </figure>
+            </div>
+          </div>
+        </details>
+
+        <details class="project-card">
+          <summary class="project-summary">
+            <div class="project-summary-inner">
+              <div class="project-meta"><span class="project-metric">24.57%</span><span
+                  class="project-metric-label">year-over-year growth</span></div>
+              <h3 class="project-title">Car Sales Analysis</h3>
+              <span class="project-tags"><span class="tag">Power BI</span><span class="tag">Power Query</span><span
+                  class="tag">SQL</span><span class="tag">Excel</span><span class="tag">DAX</span><span class="tag">Data
+                  cleaning</span><span class="tag">Data modeling</span></span>
+            </div>
+            <span class="project-toggle" aria-hidden="true">+</span>
+          </summary>
+          <div class="project-body">
+            <div class="project-cols">
+              <div class="project-col">
+                <h4>The question</h4>
+                <p>How are car sales trending, and which groups and regions drive business performance?</p>
+              </div>
+              <div class="project-col">
+                <h4>What I did</h4>
+                <p>Analyzed 24K sales transactions. Used DAX time-intelligence measures and interactive filters. Broke
+                  sales down by month, gender, dealer region, income group and car company.</p>
+              </div>
+              <div class="project-col">
+                <h4>The result</h4>
+                <p>A Power BI dashboard — <strong>672M</strong> total revenue, <strong>28.09K</strong> average order
+                  value, <strong>24.57%</strong> YoY growth surfaced.</p>
+              </div>
+            </div>
+            <div class="project-screenshots">
+              <figure class="screenshot-fig">
+                <button class="screenshot-btn" aria-label="Enlarge Car Sales dashboard for all companies"
+                  data-src="assets/carsales-1.jpg"><img src="assets/carsales-1.jpg"
+                    alt="Car Sales Power BI dashboard for all companies" loading="lazy" /></button>
+                <figcaption>Sales dashboard, all companies</figcaption>
+              </figure>
+              <figure class="screenshot-fig">
+                <button class="screenshot-btn" aria-label="Enlarge Car Sales dashboard filtered to BMW"
+                  data-src="assets/carsales-2.jpg"><img src="assets/carsales-2.jpg"
+                    alt="Car Sales Power BI dashboard filtered to BMW" loading="lazy" /></button>
+                <figcaption>Company view: BMW</figcaption>
+              </figure>
+            </div>
+          </div>
+        </details>
+
+        <div class="wip-bar" aria-label="Work in progress">
+          <span class="wip-dot" aria-hidden="true"></span>
+          <span><b>Currently working on:</b> Python + AI + Case studies</span>
+        </div>
+
+        <h3 class="also-built-heading">Also built</h3>
+        <div class="also-built-grid">
+          <article class="also-card reveal">
+            <h4>Online Shopping E-commerce</h4>
+            <p>A website to browse products, manage carts, place orders and pay securely online. Includes user
+              authentication, product and order management, and real-time payment updates.</p>
+          </article>
+          <article class="also-card reveal">
+            <h4>Food Ordering E-commerce</h4>
+            <p>A microservices-based food management system with products, orders, coupons, cart and authentication as
+              independent services. Secure APIs use JWT and role-based access.</p>
+          </article>
+          <article class="also-card reveal">
+            <h4>College Ranking Prediction</h4>
+            <p>A machine learning app in Python using Random Forest regression to predict college rankings. Covers
+              preprocessing, outlier detection, feature extraction and model evaluation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPROACH -->
+    <section class="section approach-section" id="approach" aria-labelledby="approach-heading">
+      <div class="container">
+        <h2 class="section-heading" id="approach-heading">
+          <span class="heading-text">How I work</span>
+          <span class="heading-line" aria-hidden="true"></span>
+        </h2>
+        <ol class="approach-steps" role="list">
+          <li class="approach-step reveal"><span class="step-num">01</span>
+            <div class="step-content">
+              <h3>Understand</h3>
+              <p>Ask what decision the data needs to support, and who will use the answer.</p>
+            </div>
+          </li>
+          <li class="approach-step reveal"><span class="step-num">02</span>
+            <div class="step-content">
+              <h3>Prepare</h3>
+              <p>Clean and shape the data with SQL, Pandas or Excel.</p>
+            </div>
+          </li>
+          <li class="approach-step reveal"><span class="step-num">03</span>
+            <div class="step-content">
+              <h3>Analyze</h3>
+              <p>Look for patterns, compare groups and test what stands out.</p>
+            </div>
+          </li>
+          <li class="approach-step reveal"><span class="step-num">04</span>
+            <div class="step-content">
+              <h3>Explain</h3>
+              <p>Turn findings into dashboards and plain-language insights for stakeholders.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section experience-section" id="experience" aria-labelledby="experience-heading">
+      <div class="container">
+        <h2 class="section-heading" id="experience-heading">
+          <span class="heading-text">Experience</span>
+          <span class="heading-line" aria-hidden="true"></span>
+        </h2>
+        <div class="experience-grid">
+          <article class="exp-card reveal">
+            <div class="exp-header">
+              <h3>Project Assistant</h3><span class="exp-date">Sep 2025 – Mar 2026 · On-site</span>
+            </div>
+            <p class="exp-org">Indian Institute of Science</p>
+            <ul class="exp-bullets">
+              <li>Coordinated on-campus and virtual recruitment drives as the main contact for recruiters, students and
+                the placement team.</li>
+              <li>Researched 400+ companies and reached out to 700+ recruiters by email and phone.</li>
+              <li>Verified documents for 500+ students and managed registrations to match recruiter requirements.</li>
+              <li>Handled logistics, interview scheduling, vendors and invoicing, and kept placement records accurate.
+              </li>
+            </ul>
+          </article>
+          <article class="exp-card reveal">
+            <div class="exp-header">
+              <h3>Business Development Intern</h3><span class="exp-date">Jan – May 2025 · On-site</span>
+            </div>
+            <p class="exp-org">Edu Tantr</p>
+            <ul class="exp-bullets">
+              <li>Found new business through market research, cold outreach, referrals and networking.</li>
+              <li>Pitched solutions, led negotiations and closed deals that contributed to revenue growth.</li>
+              <li>Tracked lead conversion, pipeline growth and revenue, and analyzed market trends and competitors.</li>
+            </ul>
+          </article>
+          <article class="exp-card reveal">
+            <div class="exp-header">
+              <h3>Software Developer Trainee</h3><span class="exp-date">Jul – Oct 2023 · Remote</span>
+            </div>
+            <p class="exp-org">Safedock</p>
+            <ul class="exp-bullets">
+              <li>Built a client management web app with ASP.NET Web Forms and C#, including login, Google OAuth and
+                session handling.</li>
+              <li>Implemented CRUD operations with ADO.NET and SQL stored procedures, shown in a paginated GridView.
+              </li>
+              <li>Coordinated with the client on requirements and led the team to deliver on time.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills-section" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <h2 class="section-heading" id="skills-heading">
+          <span class="heading-text">Skills</span>
+          <span class="heading-line" aria-hidden="true"></span>
+        </h2>
+        <div class="skills-table reveal">
+          <div class="skills-row"><span class="skills-label">Languages</span>
+            <div class="skills-chips" role="list"><span class="chip" role="listitem">Python</span><span class="chip"
+                role="listitem">SQL</span><span class="chip" role="listitem">DAX</span></div>
+          </div>
+          <div class="skills-row"><span class="skills-label">Tools</span>
+            <div class="skills-chips" role="list"><span class="chip" role="listitem">Excel</span><span class="chip"
+                role="listitem">MySQL</span><span class="chip" role="listitem">Pandas</span></div>
+          </div>
+          <div class="skills-row"><span class="skills-label">Visualization</span>
+            <div class="skills-chips" role="list"><span class="chip" role="listitem">Power BI</span><span class="chip"
+                role="listitem">Looker Studio</span></div>
+          </div>
+          <div class="skills-row"><span class="skills-label">Data skills</span>
+            <div class="skills-chips" role="list"><span class="chip" role="listitem">Data cleaning</span><span
+                class="chip" role="listitem">Data modeling</span><span class="chip" role="listitem">GenAI</span></div>
+          </div>
+        </div>
+        <blockquote class="skills-quote reveal">
+          <p>Passion keeps the brain active.</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section education-section" id="education" aria-labelledby="education-heading">
+      <div class="container">
+        <h2 class="section-heading" id="education-heading">
+          <span class="heading-text">Education</span>
+          <span class="heading-line" aria-hidden="true"></span>
+        </h2>
+        <div class="edu-list">
+          <div class="edu-row reveal">
+            <div class="edu-info">
+              <h3>B.Tech, Information Technology</h3>
+              <p class="edu-org">Velalar College of Engineering and Technology · 2019 – 2023</p>
+            </div><span class="edu-score">8.46 CGPA</span>
+          </div>
+          <div class="edu-row reveal">
+            <div class="edu-info">
+              <h3>HSC, Computer Science</h3>
+              <p class="edu-org">Kongu Velalar Higher Secondary School</p>
+            </div><span class="edu-score">71%</span>
+          </div>
+          <div class="edu-row reveal">
+            <div class="edu-info">
+              <h3>SSLC</h3>
+              <p class="edu-org">Kongu Velalar Higher Secondary School</p>
+            </div><span class="edu-score">91%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section certs-section" id="certifications" aria-labelledby="certs-heading">
+      <div class="container">
+        <h2 class="section-heading" id="certs-heading">
+          <span class="heading-text">Certifications</span>
+          <span class="heading-line" aria-hidden="true"></span>
+        </h2>
+        <div class="certs-grid">
+          <div class="cert-card reveal">
+            <h3>Excel and Data Analytics Bootcamp</h3>
+            <p class="cert-source">Udemy</p>
+          </div>
+          <div class="cert-card reveal">
+            <h3>Generative AI for Data Analytics</h3>
+            <p class="cert-source">Coursera</p>
+          </div>
+          <div class="cert-card reveal">
+            <h3>Agile Project Management</h3>
+            <p class="cert-source">Coursera</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRESENTATIONS -->
+    <section class="section presentations-section" id="presentations" aria-labelledby="presentations-heading">
+      <div class="container">
+        <h2 class="section-heading" id="presentations-heading">
+          <span class="heading-text">Presentations</span>
+          <span class="heading-line" aria-hidden="true"></span>
+        </h2>
+        <div class="pres-grid">
+          <article class="pres-card reveal"><span class="pres-pill">Smart India Hackathon 2022</span>
+            <h3>“Renting the Ideal Farming Equipment”</h3>
+            <p>A digital solution to improve farm equipment accessibility.</p>
+          </article>
+          <article class="pres-card reveal"><span class="pres-pill">Computer Society of India</span>
+            <h3>5G Technology</h3>
+            <p>A detailed session on its applications and future impact.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 class="section-heading" id="contact-heading">
+          <span class="heading-text">Contact</span>
+          <span class="heading-line" aria-hidden="true"></span>
+        </h2>
+        <a href="mailto:abinanthan1011@gmail.com" class="email-link"
+          aria-label="Send email to Abinanthan T">abinanthan1011@gmail.com</a>
+        <div class="contact-links">
+          <a href="https://linkedin.com/in/abinanthan-t" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn profile of Abinanthan T">LinkedIn</a>
+          <a href="https://github.com/abinanthan1" target="_blank" rel="noopener noreferrer"
+            aria-label="GitHub profile of Abinanthan T">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© Abinanthan T</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox" hidden>
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">✕</button>
+    <img src="" alt="" id="lightbox-img" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
